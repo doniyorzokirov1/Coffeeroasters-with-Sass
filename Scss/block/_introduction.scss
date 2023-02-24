@@ -1,0 +1,101 @@
+.intro_section {
+  background-image: url(../images/Desktop/Bitmap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 117px;
+  padding-left: 84px;
+  padding-bottom: 116px;
+  border-radius: 10px;
+  margin-bottom: 130px;
+  .intro_content {
+    h1 {
+      font-family: 'Fraunces', sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 72px;
+      line-height: 72px;
+      /* or 100% */
+      margin-bottom: 32px;
+      color: #fefcf7;
+      max-width: 493px;
+    }
+    p {
+      font-family: 'Barlow', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+      max-width: 445px;
+      margin-bottom: 56px;
+      color: #fefcf7;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+    a {
+      font-family: 'Fraunces', sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 25px;
+      /* identical to box height, or 139% */
+      text-decoration: none;
+      text-align: center;
+      color: #fefcf7;
+      background-color: #0e8784;
+      border-radius: 6px;
+      padding: 16px 31px;
+    }
+  }
+  //   MEDIA FOR TABLET   //
+  @include tablet {
+    background-image: url(../images/Tablet/Bitmap_tt.jpg);
+    padding-top: 104px;
+    padding-bottom: 104px;
+    padding-left: 58px;
+    margin-bottom: 144px;
+  }
+  .intro_content {
+    h1 {
+      max-width: 329px;
+      line-height: 48px;
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+    p {
+      max-width: 398px;
+      line-height: 25px;
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+  }
+  // //MEDIA FOR MOBILE// //
+  @include phone {
+    background-image: url(../images/Mobile/Bitmap_mobile.jpg);
+    padding: 100px 0;
+    margin-bottom: 120px;
+    .intro_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        max-width: 279px;
+        width: 100%;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+      p {
+        max-width: 279px;
+        width: 100%;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 39px;
+        text-align: center;
+      }
+    }
+  }
+}
